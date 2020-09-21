@@ -1,0 +1,11 @@
+numpy
+torch
+tqdm
+scikit-image
+# pyrender
+matplotlib
+torchsummary
+torchvision
+git+https://github.com/aleju/imgaug
+pytorch-lightning
+joblib
