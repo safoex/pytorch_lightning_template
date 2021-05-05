@@ -29,7 +29,7 @@ git commit -m 'Initialized repo'
 
 python3 -m venv $VENV_NAME
 source $VENV_NAME/bin/activate
-#pip install -r requirements.txt
-#pip install . -e
+pip install -r requirements.txt
+pip install . -e
 
 
