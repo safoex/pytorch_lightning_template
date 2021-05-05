@@ -7,6 +7,7 @@ VENV_NAME="${2:-$DEFAULT_VENV_NAME}"
 echo $VENV_NAME
 
 dvc init
+git rm -r --cached 'config/config.yaml'
 dvc add config/config.yaml
 git add config/config.yaml.dvc config/.gitignore
 
