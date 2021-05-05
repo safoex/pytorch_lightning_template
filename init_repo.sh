@@ -6,8 +6,8 @@ default_venv_name = "venv"
 venv_name = "${2:-$default_venv_name}"
 
 dvc init
-dvc add configs/config.yaml
-git add configs/config.yaml.dvc configs/.gitignore
+dvc add config/config.yaml
+git add config/config.yaml.dvc config/.gitignore
 
 if [ -z  "$3" ]
   then
