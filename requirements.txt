@@ -1,10 +1,11 @@
+wheel
+scikit-build
+
 numpy
 torch
 tqdm
 ruamel.yaml
 scikit-image
-scikit-build
-# pyrender
 matplotlib
 torchsummary
 torchvision

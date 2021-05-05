@@ -21,15 +21,20 @@ mkdir models
 mkdir data
 mkdir 'test'
 
+dvc add models
+dvc add data
+dvc add 'test'
+
 mv pytorch_lightning_template $1
 
-#rm init_repo.sh
+rm init_repo.sh
 git add --all
 git commit -m 'Initialized repo'
 
 python3 -m venv $VENV_NAME
 source $VENV_NAME/bin/activate
+#pip install wheel
 pip install -r requirements.txt
-pip install . -e
+pip install -e .
 
 
