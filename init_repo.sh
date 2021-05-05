@@ -2,8 +2,9 @@
 # $2 - shared folder on gdrive
 # $3 - venv name [or "venv"]
 
-default_venv_name = "venv"
-venv_name = "${2:-$default_venv_name}"
+DEFAULT_VENV_NAME="venv"
+VENV_NAME="${2:-$DEFAULT_VENV_NAME}"
+echo $VENV_NAME
 
 dvc init
 dvc add config/config.yaml
@@ -22,11 +23,13 @@ mkdir 'test'
 
 mv pytorch_lightning_template $1
 
-python3 -m venv $venv_name
-source $venv_name/bin/activate
-pip install -r requirements.txt
-pip install . -e
-
 #rm init_repo.sh
 git add --all
 git commit -m 'Initialized repo'
+
+python3 -m venv $VENV_NAME
+source $VENV_NAME/bin/activate
+#pip install -r requirements.txt
+#pip install . -e
+
+
