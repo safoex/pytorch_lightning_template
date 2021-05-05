@@ -1,11 +1,14 @@
 numpy
 torch
 tqdm
+ruamel.yaml
 scikit-image
+scikit-build
 # pyrender
 matplotlib
 torchsummary
 torchvision
-git+https://github.com/aleju/imgaug
 pytorch-lightning
 joblib
+scipy
+setuptools

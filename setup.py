@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mitmpose",
+    name="pytorch_package_template",
     version="0.0.0",
     author="IIT",
     author_email="evgenii.safronov@iit.it",
